@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Quiz with API</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/323cbfb3ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div class="container startScreen">
+            <h2>Quiz Application</h2>
+            1. You will be asked a total of 10 questions. <br>
+            2. Each question will have a time limit of 20 seconds. <br>
+            3. You can't select any option once the timer goes off. <br>
+
+            <div class="btn">
+                <input type="text" id="userName" name="userName" placeholder="User Name" autocomplete="off"> <br>
+                <button class="startQuiz" id="startQuiz" onclick="startQuiz()">Start Quiz</button>
+            </div>
+        </div>
+
+        <div class="container playground">
+            <div class="quizHeader">
+                <div><span id="questionCount">1</span> of 10 Questions</div>
+                <div>
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <span id="questionTimer">20</span>
+                </div>
+            </div>
+
+            <div class="quizBody">
+                <h3 id="question"></h3>
+                <ul id="quizOptions"></ul>
+            </div>
+
+            <div class="loader">
+                <i class="fa-solid fa-gear fa-spin"></i>
+            </div>
+
+            <div class="quizFooter">
+                <button id="nextButton">Next</button>
+            </div>
+        </div>
+
+        <div class="container endScreen">
+            <p>Quiz Finished !</p>
+            <p>Hello ! &nbsp;<span id="resultUserName"></span></p>
+            <p>Your Score is <span class="finalScore"></span> out of 10.</p>
+
+            <div class="btn">
+                <button class="resetQuiz" id="startQuiz" onclick="startQuiz()">Reset Quiz</button>
+            </div>
+
+        </div>
+</body>
+</html>

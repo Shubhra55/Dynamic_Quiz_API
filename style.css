@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #78c1f3;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container
+{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 1rem;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35)0px 5px 15px;
+}
+
+.container h2
+{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.btn
+{
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.btn input,
+.btn button
+{
+    width: 50%;
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+.btn .startQuiz,
+.btn .resetQuiz
+{
+    cursor: pointer;
+    color: #fff;
+    background: #78c1f3;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.quizHeader
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.quizBody
+{
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.loader
+{
+    text-align: center;
+    margin: 5rem;
+}
+
+.loader i
+{
+    font-size: 55px;
+}
+
+.quizFooter
+{
+    text-align: end;
+}
+
+.quizFooter button
+{
+    height: 35px;
+    width: 20%;
+    cursor: pointer;
+    color: #fff;
+    background: #55b7f9;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.playground,
+.endScreen,
+.loader
+{
+    display: none;
+}
+
+.quizBody #quizOptions
+{
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.quizBody #quizOptions li
+{
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.quizBody #quizOptions li:hover
+{
+    border: 1px solid #689f38;
+}
+
+.quizBody #quizOptions li.correct
+{
+    background: #e7f6d5;
+    color: #689f38;
+    border-color: #689f38;
+}
+
+.quizBody #quizOptions li.incorrect
+{
+    background: #ffdde0;
+    color: #d32f2f;
+    border-color: #d32f2f;
+}
+
+.disable
+{
+    pointer-events: none;
+}
+
+.endScreen p
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#resultUserName
+{
+    text-transform: capitalize;
+}
